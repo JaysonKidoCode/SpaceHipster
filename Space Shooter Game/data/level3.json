@@ -5,13 +5,13 @@
     {
       "time": 1,
       "x": 0.05,
-      "health": 6,
+      "health": 25,
       "speedX": 20, 
       "speedY": 50,
       "key": "redEnemy",
       "scale": 3,
-      "shootFreq": 2,
-      "bulletVelocity": 100
+      "shootFreq": 0.001,
+      "bulletVelocity": 700
     },
     {
       "time": 2,
@@ -21,8 +21,8 @@
       "speedY": 50,
       "key": "redEnemy",
       "scale": 1,
-      "shootFreq": 2,
-      "bulletVelocity": 100
+      "shootFreq": 0.06,
+      "bulletVelocity": 400
     },
     {
       "time": 3,
@@ -32,8 +32,8 @@
       "speedY": 50,
       "key": "redEnemy",
       "scale": 1,
-      "shootFreq": 2,
-      "bulletVelocity": 100
+      "shootFreq": 0.1,
+      "bulletVelocity": 300
     },
     {
       "time": 4,
@@ -43,7 +43,72 @@
       "speedY": 50,
       "key": "redEnemy",
       "scale": 1,
-      "shootFreq": 2,
-      "bulletVelocity": 100
+      "shootFreq": 0.001,
+      "bulletVelocity": 325
+    },{
+      "time": 6,
+      "x": 0.1,
+      "health": 3,
+      "speedX": 50, 
+      "speedY": 50,
+      "key": "redEnemy",
+      "scale": 1,
+      "shootFreq": 0.5,
+      "bulletVelocity": 1000
+    },
+    {
+      "time": 7,
+      "x": 0.1,
+      "health": 3,
+      "speedX": 50, 
+      "speedY": 50,
+      "key": "redEnemy",
+      "scale": 1,
+      "shootFreq": 0.5,
+      "bulletVelocity": 1000
+    },
+    {
+      "time": 8,
+      "x": 0.1,
+      "health": 3,
+      "speedX": 50, 
+      "speedY": 50,
+      "key": "redEnemy",
+      "scale": 1,
+      "shootFreq": 0.5,
+      "bulletVelocity": 1000
+    },
+    {
+      "time": 9,
+      "y": 0.1,
+      "health": 4,
+      "speedX": 50, 
+      "speedY": 50,
+      "key": "redEnemy",
+      "scale": 1,
+      "shootFreq": 0.2,
+      "bulletVelocity": 1000
+    },
+    {
+      "time": 10,
+      "x": 0.1,
+      "health": 4,
+      "speedX": 100, 
+      "speedY": 100,
+      "key": "yellowEnemy",
+      "scale": 1,
+      "shootFreq": 0.2,
+      "bulletVelocity": 1000
+    },
+    {
+      "time": 10,
+      "x": 0.1,
+      "health": 3,
+      "speedX": 50, 
+      "speedY": 50,
+      "key": "greenEnemy",
+      "scale": 1,
+      "shootFreq": 0.5,
+      "bulletVelocity": 1000
     }]
   }

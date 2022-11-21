@@ -5,12 +5,12 @@
     {
       "time": 1,
       "x": 0.05,
-      "health": 6,
+      "health": 10,
       "speedX": 20, 
       "speedY": 50,
       "key": "greenEnemy",
       "scale": 3,
-      "shootFreq": 2,
+      "shootFreq": 1,
       "bulletVelocity": 100
     },
     {
@@ -21,7 +21,7 @@
       "speedY": 50,
       "key": "greenEnemy",
       "scale": 1,
-      "shootFreq": 2,
+      "shootFreq": 1,
       "bulletVelocity": 100
     },
     {
@@ -32,7 +32,7 @@
       "speedY": 50,
       "key": "greenEnemy",
       "scale": 1,
-      "shootFreq": 2,
+      "shootFreq": 1,
       "bulletVelocity": 100
     },
     {
@@ -43,7 +43,18 @@
       "speedY": 50,
       "key": "greenEnemy",
       "scale": 1,
-      "shootFreq": 2,
+      "shootFreq": 1,
       "bulletVelocity": 100
+    },
+    {
+      "time": 5,
+      "x": 0.1,
+      "health": 3,
+      "speedX": 125, 
+      "speedY": 100,
+      "key": "greenEnemy",
+      "scale": 1,
+      "shootFreq": 0.5,
+      "bulletVelocity": 150
     }]
   }

@@ -35,7 +35,7 @@ SpaceHipster.GameState = {
     this.load.text('level3', 'data/level3.json');
     
     //load audio
-    this.load.audio('orchestra', ['/audio/8bit-orchestra.mp3', '/audio/8bit-orchestra.ogg']);
+    this.load.audio('orchestra', ['audio/8bit-orchestra.mp3', 'audio/8bit-orchestra.ogg']);
     
   },
   //executed after everything is loaded
@@ -51,7 +51,7 @@ SpaceHipster.GameState = {
     
     // initiate bullet pool
     this.initBullets();
-    this.shootingTimer = this.game.time.events.loop(Phaser.Timer.SECOND/5, this.createPlayerBullet, this);
+    this.shootingTimer = this.game.time.events.loop(Phaser.Timer.SECOND/1000, this.createPlayerBullet, this);
     
     // enemy
     this.initEnemies();
@@ -74,7 +74,7 @@ SpaceHipster.GameState = {
       // check which side is being touched and set direction variable accordingly
       var direction = targetX >= this.game.world.centerX ? 1: -1;
       this.player.body.velocity.x = direction * this.PLAYER_SPEED; 
-    } 
+    }
   },
   initBullets: function() {
     this.playerBullets = this.add.group();
@@ -95,12 +95,15 @@ SpaceHipster.GameState = {
   },
   initEnemies: function() {
     this.enemies = this.add.group();
-     this.enemies.enableBody = true;
+    //this.enemies.enableBody = true;
     
     this.enemyBullets = this.add.group();
-    //this.enemyBullets.enableBody = true;
+    this.enemyBullets.enableBody = true;
     
-
+ //   var enemy = new SpaceHipster.Enemy(this.game, 100, 100, 10, 'greenEnemy', this.enemyBullets, 2, 100);
+ //   this.enemies.add(enemy);
+//     enemy.body.velocity.x = 100;
+//     enemy.body.velocity.y = 50;
   },
   damageEnemy: function(bullet, enemy) {
     enemy.damage(1);
@@ -129,7 +132,7 @@ SpaceHipster.GameState = {
     this.levelData = JSON.parse(this.game.cache.getText('level' + this.currentLevel));
     
     //end of level timer
-    this.endOfLevelTimer = this.game.time.events.add(this.levelData.duration * 7000, function() {
+    this.endOfLevelTimer = this.game.time.events.add(this.levelData.duration * 5000, function() {
       console.log('level ended!');
       this.orchestra.stop();
       if (this.currentLevel < this.numLevels) {
